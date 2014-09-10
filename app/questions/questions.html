@@ -1,0 +1,16 @@
+<ul class="list_group">
+  <li class="list-group-item" ng-repeat="question in questions">
+    <i class="fa fa-{{question.icon}}"></i>
+    {{question.text}}
+    <div class="pull-right"><i class="fa fa-square-o fa-2x"></i></div>
+    <div class="pull-right">
+      <ul class="question-examples">
+        <li ng-repeat="example in question.examples">
+          {{example.name}}
+        </li>
+      </ul>
+    </div>
+  </li>
+ </li>
+</ul>
+

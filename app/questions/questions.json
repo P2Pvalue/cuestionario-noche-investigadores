@@ -1,0 +1,23 @@
+[
+  {
+    "icon": "home",
+    "text": "Alojarte en un sitio de economía colaborativa",
+    "examples": [
+       {
+         "id": "airbnb",
+         "name": "AirBnB"
+       }
+     ]
+  },
+  {
+    "icon": "home",
+    "text": "Alojarte en un sitio de economía colaborativa",
+    "examples": [
+       {
+         "id": "airbnb",
+         "name": "AirBnB"
+       }
+     ]
+  }
+
+]
