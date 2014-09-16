@@ -1,0 +1,10 @@
+{
+  "name": "noche-investigadores",
+  "description": "Cuestionario para la Noche de los Investigadores",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "nodemailer": "1.3.x",
+    "express": "4.x"
+  }
+}
