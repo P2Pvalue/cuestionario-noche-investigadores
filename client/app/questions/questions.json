@@ -2,58 +2,56 @@
     {"icon":"edit",
      "text":"Escritura colaborativa",
      "questions":[
-	 {"text":"Consultado la Wikipedia",
-	  "examples":[
-	      {"id":"wikipedia",
-	       "name":"Wikipedia",
-	       "link":"http://www.wikipedia.org"
-	      }
-	  ]
-	 },
-	 
-	 {"text":"Usado una guía de viajes creada colaborativamente",
-	  "examples":[
-	      { "id":"Wikitravel",
-		"name":"wikitravel",
-		"link":"http://wikitravel.org",
-	      }
-	  ]
-	 }
-	 {"text":"Descargado subtítulos de una serie con subtitulos creados por sus fans",
-	  "examples":[
-	      { "id":"opensubtitles",
-		"name":"OpenSubtitles",
-		"link":"http://www.opensubtitles.org"
-	      }
-	  ]
-	 }
+         {"text":"Consultado la Wikipedia",
+          "examples":[
+              {"id":"wikipedia",
+               "name":"Wikipedia",
+               "link":"http://www.wikipedia.org"
+              }
+          ]
+         },
+         {"text":"Usado una guía de viajes creada colaborativamente",
+          "examples":[
+              { "id":"Wikitravel",
+                "name":"wikitravel",
+                "link":"http://wikitravel.org"
+              }
+          ]
+         },
+         {"text":"Descargado subtítulos de una serie con subtitulos creados por sus fans",
+          "examples":[
+              { "id":"opensubtitles",
+                "name":"OpenSubtitles",
+                "link":"http://www.opensubtitles.org"
+              }
+          ]
+         }
      ]
     },
     {"icon": "home",
      "text":"Alojamiento colaborativo",
      "questions": [
-	 {"text":"Alojado en un sitio de economía colaborativa",
-	  "examples": [
-	      {
-		  "id": "airbnb",
-		  "name": "AirBnB",
-		  "link": "https://www.airbnb.com/",
-	      }
-	  ]
-	 }
-	 {"text":"Buscado alojamiento en la casa de alguien que la quiere compartir con viajeros",
-	  "examples":[
-	      { "id":"couchsurfing",
-		"name":"CouchSurfing",
-		"link":"https://www.couchsurfing.org/"
-	      },
-	      { "id":"hospitalityclub",
-		"name":"Hospitality Club",
-		"link":"http://www.hospitalityclub.org/"
-	      }
-	  ]
-	 }
+         {"text":"Alojado en un sitio de economía colaborativa",
+          "examples": [
+              {
+                  "id": "airbnb",
+                  "name": "AirBnB",
+                  "link": "https://www.airbnb.com/"
+              }
+          ]
+         },
+         {"text":"Buscado alojamiento en la casa de alguien que la quiere compartir con viajeros",
+          "examples":[
+              { "id":"couchsurfing",
+                "name":"CouchSurfing",
+                "link":"https://www.couchsurfing.org/"
+              },
+              { "id":"hospitalityclub",
+                "name":"Hospitality Club",
+                "link":"http://www.hospitalityclub.org/"
+              }
+          ]
+         }
      ]
-    }
-    
+    }    
 ]
