@@ -6,7 +6,12 @@
        {
          "id": "airbnb",
          "name": "AirBnB"
+       },
+       {
+         "id": "couchsurfing",
+         "name": "Couchsurfing"
        }
+
      ]
   },
   {
