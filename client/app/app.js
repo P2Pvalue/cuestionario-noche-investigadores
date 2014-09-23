@@ -5,8 +5,16 @@ angular.module('nocheInv', [
   'ngRoute',
   'ui.bootstrap',
   'nocheInv.questions',
+  'nocheInv.results',
   'nocheInv.version'
 ]).
 config(['$routeProvider', function($routeProvider) {
-  $routeProvider.otherwise({redirectTo: '/questions'});
+  $routeProvider.
+    when('/results', {
+      templateUrl: 'questions/results.html',
+      controller:  'ResultsCtrl'
+    }).
+    otherwise({
+      redirectTo: '/questions'
+    });
 }]);

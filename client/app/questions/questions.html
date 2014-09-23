@@ -1,3 +1,7 @@
+<div class="page-header">
+  <h1>La producción colaborativa ha entrado en tu vida... ¡adivina cuánto!</h1>
+</div>
+
 <ul class="list_group questions">
   <li class="list-group-item" ng-repeat="question in questions" ng-class="{selected : isSelected(question)}">
     <i class="fa fa-{{question.icon}}"></i>
@@ -18,3 +22,4 @@
  </li>
 </ul>
 
+<button class="btn btn-primary btn-lg pull-right" ng-click="showResults()">Conocer resultados</button>

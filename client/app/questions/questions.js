@@ -9,7 +9,7 @@ angular.module('nocheInv.questions', ['ngRoute'])
   });
 }])
 
-.controller('questionsCtrl', ['$scope', '$http', function($scope, $http) {
+.controller('questionsCtrl', ['$scope', '$http', '$location', function($scope, $http, $location) {
   $http.get('questions/questions.json').success(function(data) {
     $scope.questions = data;
   });
@@ -32,5 +32,9 @@ angular.module('nocheInv.questions', ['ngRoute'])
       // example
       return item.selected;
     }
+  };
+
+  $scope.showResults = function() {
+    $location.path('/results');
   };
 }]);
