@@ -1,9 +1,5 @@
 /* app css stylesheet */
 
-ul.questions {
-  padding: 0px;
-}
-
-ul.questions li.selected {
+.selected {
   background-color: #d6e9c6;
 }

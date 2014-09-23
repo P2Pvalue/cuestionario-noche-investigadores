@@ -2,24 +2,30 @@
   <h1>La producción colaborativa ha entrado en tu vida... ¡adivina cuánto!</h1>
 </div>
 
-<ul class="list_group questions">
-  <li class="list-group-item" ng-repeat="question in questions" ng-class="{selected : isSelected(question)}">
-    <i class="fa fa-{{question.icon}}"></i>
-    {{question.text}}
-    <div class="pull-right">
-      <ul class="question-examples">
-        <li ng-repeat="example in question.examples">
-          <button type="button" class="btn btn-default" ng-click="selectExample(example)" ng-class="{active : isSelected(example)}">
-          <img ng-src="images/logos/{{example.id}}.png" title="{{example.name}}" id="img-{{example-name}}">
-        </button>
-        </li>
-        <li>
-          <input ng-model="question.others" type="text" placeholder="otros">
-        </li>
-      </ul>
-    </div>
-  </li>
- </li>
-</ul>
+<div class="row category" ng-repeat="category in categories">
+  <div class="col-md-1" ng-class="{selected : isSelected(category)}" >
+    <i class="fa fa-{{category.icon}}"></i>
+  </div>
+
+  <div class="col-md-11">
+      <div class="row" ng-repeat="question in category.questions" ng-class="{selected : isSelected(question)}">
+        <div class="col-md-8">
+          {{question.text}}
+        </div>
+        <div class="col-md-4 text-right">
+          <ul class="question-examples">
+            <li ng-repeat="example in question.examples">
+              <button type="button" class="btn btn-default" ng-click="selectExample(example)" ng-class="{active : isSelected(example)}">
+              <img ng-src="images/logos/{{example.id}}.png" title="{{example.name}}" id="img-{{example-name}}">
+            </button>
+            </li>
+            <li>
+              <input ng-model="question.others" type="text" placeholder="otros">
+            </li>
+          </ul>
+        </div>
+      </div>
+  </div>
+</div>
 
 <button class="btn btn-primary btn-lg pull-right" ng-click="showResults()">Conocer resultados</button>

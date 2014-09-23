@@ -11,7 +11,7 @@ angular.module('nocheInv.questions', ['ngRoute'])
 
 .controller('questionsCtrl', ['$scope', '$http', '$location', function($scope, $http, $location) {
   $http.get('questions/questions.json').success(function(data) {
-    $scope.questions = data;
+    $scope.categories = data;
   });
 
   $scope.selectExample = function(example) {
@@ -19,19 +19,30 @@ angular.module('nocheInv.questions', ['ngRoute'])
   };
 
   $scope.isSelected = function(item) {
-    if (item.examples !== undefined) {
-      // question
-      var selected = item.others !== undefined && item.others !== "";
+    var selected;
 
-      angular.forEach(item.examples, function(example) {
-        selected = selected || example.selected;
+    if (item.questions !== undefined) {
+      // category
+      selected = false;
+
+      angular.forEach(item.questions, function(question) {
+        selected = selected || $scope.isSelected(question);
       });
 
-      return selected;
+    } else if (item.examples !== undefined) {
+      // question
+      selected = item.others !== undefined && item.others !== "";
+
+      angular.forEach(item.examples, function(example) {
+        selected = selected || $scope.isSelected(example);
+      });
+
     } else {
       // example
-      return item.selected;
+      selected = item.selected;
     }
+
+    return selected;
   };
 
   $scope.showResults = function() {
