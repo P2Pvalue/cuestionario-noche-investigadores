@@ -21,7 +21,7 @@ angular.module('nocheInv.questions', ['ngRoute'])
   $scope.isSelected = function(item) {
     if (item.examples !== undefined) {
       // question
-      var selected = false;
+      var selected = item.others !== undefined && item.others !== "";
 
       angular.forEach(item.examples, function(example) {
         selected = selected || example.selected;

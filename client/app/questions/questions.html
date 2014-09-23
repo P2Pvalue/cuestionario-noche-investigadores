@@ -5,9 +5,12 @@
     <div class="pull-right">
       <ul class="question-examples">
         <li ng-repeat="example in question.examples">
-        <button type="button" class="btn btn-default" ng-click="selectExample(example)" ng-class="{active : isSelected(example)}">
-        <img ng-src="images/logos/{{example.id}}.png" title="{{example.name}}" id="img-{{example-name}}">
+          <button type="button" class="btn btn-default" ng-click="selectExample(example)" ng-class="{active : isSelected(example)}">
+          <img ng-src="images/logos/{{example.id}}.png" title="{{example.name}}" id="img-{{example-name}}">
         </button>
+        </li>
+        <li>
+          <input ng-model="question.others" type="text" placeholder="otros">
         </li>
       </ul>
     </div>
