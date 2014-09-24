@@ -9,24 +9,26 @@
           {
             "id": "wikipedia",
             "name": "Wikipedia",
-            "link": "http://www.wikipedia.org"
+            "link": "http://www.wikipedia.org",
+            "image": true
           }
         ]
       },
       {
         "text": "Usado una guía de viajes creada colaborativamente",
-        "other-examples": true,
+        "other_examples": true,
         "examples": [
           {
-            "id": "Wikitravel",
+            "id": "wikitravel",
             "name": "wikitravel",
-            "link": "http://wikitravel.org"
+            "link": "http://wikitravel.org",
+            "image": true
           }
         ]
       },
       {
         "text": "Descargado subtítulos de una serie con subtitulos creados por sus fans",
-        "other-examples": true,
+        "other_examples": true,
         "examples": [
           {
             "id": "opensubtitles",
@@ -42,22 +44,24 @@
    "questions": [
      {
        "text": "Alojado en un sitio de economía colaborativa",
-       "other-examples": true,
+       "other_examples": true,
        "examples": [
          {
            "id": "airbnb",
            "name": "AirBnB",
-           "link": "https://www.airbnb.com/"
+           "link": "https://www.airbnb.com/",
+           "image": true
          }
        ]
      },
      {
        "text": "Buscado alojamiento en la casa de alguien que la quiere compartir con viajeros",
-       "other-examples": true,
+       "other_examples": true,
        "examples": [
          { "id": "couchsurfing",
            "name": "CouchSurfing",
-           "link": "https://www.couchsurfing.org/"
+           "link": "https://www.couchsurfing.org/",
+            "image": true
          },
          { "id": "hospitalityclub",
            "name": "Hospitality Club",
@@ -73,13 +77,14 @@
     [
       {
         "text": "Has compartido coche para viajar",
-        "other-examples": true,
+        "other_examples": true,
         "examples":
         [
           {
             "id": "blablacar",
             "name": "BlaBlaCar",
-            "link": "http://www.blablacar.es/"
+            "link": "http://www.blablacar.es/",
+            "image": true
           },
           {
             "id": "uber",
@@ -101,17 +106,19 @@
     "questions": [
       {
         "text": "Usado un navegador web libre",
-        "other-examples": true,
+        "other_examples": true,
         "examples": [
           {
             "id": "firefox",
             "name": "Firefox",
-            "link": "https://www.mozilla.org/firefox/"
+            "link": "https://www.mozilla.org/firefox/",
+            "image": true
           },
           {
             "id": "chromium",
             "name": "Chromium",
-            "link": "http://www.chromium.org/"
+            "link": "http://www.chromium.org/",
+            "image": true
           }
         ]
       },
@@ -121,18 +128,20 @@
           {
             "id": "android",
             "name": "Android",
-            "link": "http://www.android.com/"
+            "link": "http://www.android.com/",
+            "image": true
           }
         ]
       },
       {
         "text": "Tienes un blog que usa software libre",
-        "other-examples": true,
+        "other_examples": true,
         "examples": [
           {
             "id": "wordpress",
             "name": "Wordpress",
-            "link": "http://www.wordpress.org/"
+            "link": "http://www.wordpress.org/",
+            "image": true
           },
           {
             "id": "joomla",
@@ -147,7 +156,8 @@
           {
             "id": "debian",
             "name": "Debian",
-            "link": "http://www.debian.org/"
+            "link": "http://www.debian.org/",
+            "image": true
           },
           {
             "id": "ubuntu",
@@ -170,7 +180,7 @@
     "questions": [
       {
         "text": "Consultado un mapa de tu ciudad creado por tus vecinos",
-        "other-examples":true,
+        "other_examples":true,
         "examples": [
           {
             "id": "openstreetmap",
@@ -180,13 +190,14 @@
         ]
       },
       {"text": "Visto un mapa de desastres naturales creado al momento",
-       "other-examples": true,
+       "other_examples": true,
        "examples":
        [
          {
            "id": "ushahidi",
            "name": "Ushahidi",
-           "link": "http://www.ushahidi.com/"
+           "link": "http://www.ushahidi.com/",
+            "image": true
          }
        ]
       }
@@ -199,13 +210,14 @@
     [
       {
         "text": "Aprender a arreglar tu bicicleta con otras personas en el \"Bicilab\" de tu bario.",
-        "other-examples": true,
+        "other_examples": true,
         "examples":
         [
           {
             "id":"recicletos",
             "name": "Recicletos",
-            "link":"http://blogs.latabacalera.net/recicletos/"
+            "link":"http://blogs.latabacalera.net/recicletos/",
+            "image": true
           },
           {
             "id": "bicilabenre",
@@ -216,24 +228,26 @@
       },
       {
         "text":"Usado una impresora 3D diseñada colaborativamente",
-        "other-examples":true,
+        "other_examples":true,
         "examples":
         [
           {
             "id":"reprap",
             "name":"RepRap",
-            "link":"http://www.reprap.org/"
+            "link":"http://www.reprap.org/",
+            "image": true
           }
         ]
       },
       {
         "text":"Conoces un \"MakerSpace\"",
-        "other-examples":true,
+        "other_examples":true,
         "examples":[
           {
             "id":"makermadrid",
             "name" :"MakeSpace Madrid",
-            "link":"http://makespacemadrid.org/"
+            "link":"http://makespacemadrid.org/",
+            "image": true
           }
         ]
       }
@@ -246,7 +260,7 @@
     [
       {
         "text": "Has descargado una película de una red P2P",
-        "other-examples": true,
+        "other_examples": true,
         "examples":
         [
           {
@@ -257,12 +271,13 @@
           {
             "id": "bittorrent",
             "name":"BitTorrent",
-            "link":"http://www.bittorrent.com/"
+            "link":"http://www.bittorrent.com/",
+            "image": true
           }
         ]
       },
       { "text": "Compartido libros que acabas de leer",
-        "other-examples": true,
+        "other_examples": true,
         "examples":
         [
           {
@@ -274,7 +289,7 @@
       },
       {
         "text": "Vendido o regalado algo que ya no usas",
-        "other-examples": true,
+        "other_examples": true,
         "examples":
         [
           {
@@ -298,18 +313,19 @@
     [
       {
         "text":"Conoces BitCoin u otras criptomonedas",
-        "other-examples": true,
+        "other_examples": true,
         "examples": [
           {
             "id": "bitcoin",
             "name": "BitCoin",
-            "link": "http://bitcoin.com/"
+            "link": "http://bitcoin.com/",
+            "image": true
           }
         ]
       },
       {
         "text": "Has participado en un banco de tiempo",
-        "other-examples": true,
+        "other_examples": true,
         "examples":
         [
           {"id": "bdtrivas",
@@ -320,7 +336,7 @@
       },
       {
         "text": "Conoces alguna moneda social o alternativa",
-        "other-examples": true,
+        "other_examples": true,
         "examples":
         [
           {
@@ -337,13 +353,14 @@
       },
       {
         "text": "Has donado en una campaña de \"CrowdFunding\"",
-        "other-examples": "true",
+        "other_examples": "true",
         "examples":
         [
           {
             "id": "goteo",
             "name": "Goteo",
-            "link": "http://goteo.org/"
+            "link": "http://goteo.org/",
+            "image": true
           }
         ]
       }
@@ -355,7 +372,7 @@
    [
      {
        "text": "Escuchado una radio libre o comunitaria",
-       "other-examples":true,
+       "other_examples":true,
        "examples": [
          {
            "id": "radioela",
@@ -376,7 +393,7 @@
      },
      {
        "text": "Leido noticias ordenadas colaborativamente",
-       "other-examples":true,
+       "other_examples":true,
        "examples": [
          {
            "id": "meneame",
@@ -387,7 +404,7 @@
      },
      {
        "text": "Consultado un sitio de noticias creadas por los usuarios",
-       "other-examples":true,
+       "other_examples":true,
        "examples": [
          {
            "id": "wikinews",
@@ -407,7 +424,7 @@
     [
       {
         "text": "Comido alimentos de una cooperativa agroecológica",
-        "other-examples":true,
+        "other_examples":true,
         "examples":
         [
           {
@@ -424,7 +441,7 @@
       },
       {
         "text": "Participado en el huerto urbano del barrio",
-        "other-examples": true,
+        "other_examples": true,
         "examples":
         [
           {
