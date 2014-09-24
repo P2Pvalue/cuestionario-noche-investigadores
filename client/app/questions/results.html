@@ -1,3 +1,34 @@
 <div class="page-header">
-  <h1>La producción colaborativa rules</h1>
+  <h1>La producción colaborativa en tu vida</h1>
+</div>
+
+<div class="alert alert-success" role="alert">¡Enhorabuena! La producción colaborativa ya está presente en los siguientes aspectos de tu vida:</div>
+
+<div class="achievements row">
+  <div class="col-md-12">
+    <div class="achievement" ng-repeat="achievement in achievements">
+      <div class="achievement-circle">
+        <i class="fa fa-{{achievement}} achievement-icon"></i>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="panel panel-default panel-email">
+  <div class="panel-heading">¡Conoce más!</div>
+  <div class="panel-body">
+    Te enviamos tus resultados e información extra para que conozcas más sobre las comunidades en las que participas
+
+    <form role="form">
+      <div class="form-group">
+        <input type="email" class="form-control" placeholder="Correo electrónico">
+      </div>
+      <div class="form-group">
+        <div class="pull-right">
+          <button type="button" class="btn btn-danger">No, gracias</button>
+          <button type="button" class="btn btn-primary">Enviar información</button>
+        </div>
+      </div>
+    </form>
+  </div>
 </div>

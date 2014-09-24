@@ -29,3 +29,33 @@
 .btn-example {
   margin: 10px;
 }
+
+.achievement {
+  background-image: url(images/logos/badge.png);
+  width: 140px;
+  height: 181px;
+  float: left;
+  position: relative;
+  margin-right: 15px;
+}
+
+.achievement-circle {
+  background-color: white;
+  border-radius: 50%;
+  width: 86px;
+  height: 86px;
+  position: absolute;
+  top: 28px;
+  left: 26px;
+}
+
+.achievement-icon {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 60px !important;
+}
+
+.panel-email {
+  margin-top: 30px;
+}
