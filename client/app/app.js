@@ -6,6 +6,7 @@ angular.module('nocheInv', [
   'ui.bootstrap',
   'nocheInv.questions',
   'nocheInv.results',
+  'nocheInv.finish',
   'nocheInv.version'
 ]).
 config(['$routeProvider', function($routeProvider) {
@@ -13,6 +14,10 @@ config(['$routeProvider', function($routeProvider) {
     when('/results', {
       templateUrl: 'questions/results.html',
       controller:  'ResultsCtrl'
+    }).
+    when('/finish', {
+      templateUrl: 'questions/finish.html',
+      controller:  'FinishCtrl'
     }).
     otherwise({
       redirectTo: '/questions'

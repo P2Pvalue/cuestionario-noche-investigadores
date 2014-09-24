@@ -2,7 +2,11 @@
 
 angular.module('nocheInv.results', ['ngRoute'])
 
-.controller('ResultsCtrl', ['$scope', '$http', function($scope, $http) {
+.controller('ResultsCtrl', ['$scope', '$http', '$location', function($scope, $http, $location) {
   $scope.achievements = [ "home", "edit" ];
+
+  $scope.finish = function() {
+    $location.path('/finish');
+  };
 }]);
              
