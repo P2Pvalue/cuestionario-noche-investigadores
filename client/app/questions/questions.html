@@ -19,7 +19,7 @@
               <img ng-src="images/logos/{{example.id}}.png" title="{{example.name}}" id="img-{{example-name}}">
             </button>
             </li>
-            <li>
+            <li ng-if="question.other_examples">
               <input ng-model="question.others" type="text" placeholder="otros">
             </li>
           </ul>
