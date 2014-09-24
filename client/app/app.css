@@ -1,5 +1,31 @@
 /* app css stylesheet */
 
+.category {
+  overflow: hidden;
+}
+
+.category-icon-cell, .question-cell {
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
+}
+
+.category-icon {
+  padding-top: 50%;
+  font-size: 60px !important;
+}
+
+.question, .category-icon-cell {
+  border: 1px solid #ddd;
+}
+
 .selected {
   background-color: #d6e9c6;
+}
+
+.question-examples {
+  list-style-type: none;
+}
+
+.btn-example {
+  margin: 10px;
 }
