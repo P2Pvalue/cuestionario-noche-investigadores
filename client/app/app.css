@@ -50,9 +50,8 @@
 }
 
 .achievement-icon {
-  position: absolute;
-  top: 15px;
-  left: 15px;
+  position: relative;
+  top: 12px;
   font-size: 60px !important;
 }
 
