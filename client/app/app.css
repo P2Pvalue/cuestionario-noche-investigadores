@@ -26,8 +26,12 @@
   list-style-type: none;
 }
 
-.btn-example {
+.btn-example, .input-other-examples {
   margin: 10px;
+}
+
+.btn-example {
+  width: 174px;
 }
 
 .achievement {
