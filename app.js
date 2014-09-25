@@ -40,21 +40,15 @@ var server = http.createServer(function(req, res) {
 
 server.listen(3000);
 
-var emailCredentials = function() {
-  var cred = {};
+var emailCredentials = {};
   
-  fs.readFile(__dirname + '/email.json', function(err, data) {
-    if (err) {
-      console.log(err);
-    } else {
-      cred = JSON.parse(data.toString());
-    }
-  });
-
-  console.log('cred' + cred);
-
-  return cred;
-};
+fs.readFile(__dirname + '/email.json', function(err, data) {
+  if (err) {
+    console.log(err);
+  } else {
+    emailCredentails = JSON.parse(data.toString());
+  }
+});
 
 // create reusable transporter object using SMTP transport
 //
@@ -62,7 +56,7 @@ var emailCredentials = function() {
 // the same transporter object for all e-mails
 var transporter = nodemailer.createTransport({
   service: 'Gmail',
-  auth: emailCredentials()
+  auth: { user: "test", pass: "test" }
 });
 
 var emailBody = function(json) {
@@ -78,8 +72,6 @@ var sendEmail = function(address, body) {
     text: body
   };
 
-  console.log(mailOptions);
-  console.log(emailCredentials());
   // send mail with defined transport object
   transporter.sendMail(mailOptions, function(error, info){
     if(error){
