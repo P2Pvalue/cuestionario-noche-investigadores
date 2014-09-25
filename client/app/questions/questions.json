@@ -200,7 +200,7 @@
         "examples": [
           {
             "id": "openstreetmap",
-            "text": "OpenStreetMap",
+            "name": "OpenStreetMap",
             "link": "https://www.openstreetmap.org"
           }
         ]
