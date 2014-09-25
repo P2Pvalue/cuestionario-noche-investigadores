@@ -16,18 +16,22 @@ var server = http.createServer(function(req, res) {
     req.on('end', function() {
       var jsonData = JSON.parse(jsonString);
 
-      questions.insert(jsonData, function(err, doc) {
-        if (err) throw err;
+      if (req.url === '/results') {
+        questions.insert(jsonData, function(err, doc) {
+          if (err) throw err;
 
-        res.writeHead(200, { 'Content-Type': 'application/json' });
+          res.writeHead(200, { 'Content-Type': 'application/json' });
 
-        console.log(doc);
-        res.write(JSON.stringify(doc));
+          console.log(doc);
+          res.write(JSON.stringify(doc));
 
-        res.end();
-      });
-
+          res.end();
+        });
+      } else {
       //sendMail(jsonData.email, emailBody(jsonData));
+        res.end();
+      }
+
     });
   } else {
     res.end();

@@ -23,6 +23,18 @@ angular.module('nocheInv.results', ['ngRoute'])
     }
   });
 
+  $scope.send = function() {
+    var data = sharedProperties.getResults();
+    data.email = $scope.email;
+
+    $http.post('/finish', data)
+    .success(function() {
+      $scope.finish();
+    })
+    .error(function(data) {
+      alert(data);
+    });
+  };
 
   $scope.finish = function() {
     $location.path('/finish');
