@@ -1,5 +1,7 @@
 var http = require('http');
 var nodemailer = require('nodemailer');
+var db = require('monk')('localhost/diagnostico');
+var questions = db.get('questions');
 
 var server = http.createServer(function(req, res) {
   if (req.method == "POST") {
@@ -12,6 +14,12 @@ var server = http.createServer(function(req, res) {
 
     req.on('end', function() {
       var jsonData = JSON.parse(jsonString);
+
+      questions.insert(jsonData, function(err, doc) {
+        if (err) throw err;
+
+        console.log(doc);
+      });
 
       //sendMail(jsonData.email, emailBody(jsonData));
     });
