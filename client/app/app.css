@@ -1,5 +1,23 @@
 /* app css stylesheet */
 
+@font-face {
+  font-family: "Dax Wide Regular";
+  src: url(fonts/dax-wide-regular.ttf);
+}
+
+@font-face {
+  font-family: "Verdana";
+  src: url(fonts/verdana.ttf);
+}
+
+body {
+  font-family: "Verdana"
+}
+
+.page-header {
+  font-family: "Dax Wide Regular"
+}
+
 .category {
   overflow: hidden;
 }
@@ -77,7 +95,7 @@
 }
 
 .question-text {
-    font-size: 16px;
+    font-size: 30px;
 }
 
 .footer {
