@@ -1,3 +1,4 @@
+var email = require('./email.js');
 var fs = require('fs');
 var http = require('http');
 var nodemailer = require('nodemailer');
@@ -40,23 +41,13 @@ var server = http.createServer(function(req, res) {
 
 server.listen(3000);
 
-var emailCredentials = {};
-  
-fs.readFile(__dirname + '/email.json', function(err, data) {
-  if (err) {
-    console.log(err);
-  } else {
-    emailCredentails = JSON.parse(data.toString());
-  }
-});
-
 // create reusable transporter object using SMTP transport
 //
 // NB! No need to recreate the transporter object. You can use
 // the same transporter object for all e-mails
 var transporter = nodemailer.createTransport({
   service: 'Gmail',
-  auth: { user: "test", pass: "test" }
+  auth: email.credentials
 });
 
 var emailBody = function(json) {

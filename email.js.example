@@ -1,0 +1,4 @@
+exports credentials = { 
+  user: 'test',
+  pass: 'test'
+}
