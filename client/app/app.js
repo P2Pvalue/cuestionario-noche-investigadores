@@ -22,4 +22,17 @@ config(['$routeProvider', function($routeProvider) {
     otherwise({
       redirectTo: '/questions'
     });
-}]);
+}]).
+service('sharedProperties', function() {
+  var results = {};
+
+  return {
+    getResults: function() {
+      return results;
+    },
+    setResults: function(value) {
+      results = value;
+      return results;
+    }
+  };
+});

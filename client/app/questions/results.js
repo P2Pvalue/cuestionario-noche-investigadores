@@ -2,8 +2,8 @@
 
 angular.module('nocheInv.results', ['ngRoute'])
 
-.controller('ResultsCtrl', ['$scope', '$http', '$location', function($scope, $http, $location) {
-  $scope.achievements = [ "home", "edit", "car", "code-fork" ];
+.controller('ResultsCtrl', ['$scope', '$http', '$location', 'sharedProperties', function($scope, $http, $location, sharedProperties) {
+  $scope.achievements = Object.keys(sharedProperties.getResults());
 
   $scope.finish = function() {
     $location.path('/finish');

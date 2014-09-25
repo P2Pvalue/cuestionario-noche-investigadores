@@ -9,7 +9,7 @@ angular.module('nocheInv.questions', ['ngRoute'])
   });
 }])
 
-.controller('questionsCtrl', ['$scope', '$http', '$location', function($scope, $http, $location) {
+.controller('questionsCtrl', ['$scope', '$http', '$location', 'sharedProperties', function($scope, $http, $location, sharedProperties) {
   $http.get('questions/questions.json').success(function(data) {
     $scope.categories = data;
   });
@@ -46,6 +46,44 @@ angular.module('nocheInv.questions', ['ngRoute'])
   };
 
   $scope.showResults = function() {
-    $location.path('/results');
+    var results = getResults();
+
+    $http.post('/results', results)
+    .success(function(data) {
+      sharedProperties.setResults(results);
+
+      $location.path('/results');
+    })
+    .error(function(data) {
+      alert(data);
+    });
+  };
+
+  var getResults = function() {
+    var results = {};
+
+    angular.forEach($scope.categories, function(category) {
+      if ($scope.isSelected(category)) {
+        results[category.id] = results[category.id] || {};
+
+        angular.forEach(category.questions, function(question) {
+          if ($scope.isSelected(question)) {
+            results[category.id][question.id] = results[category.id][question.id] || {};
+
+            angular.forEach(question.examples, function(example) {
+              if ($scope.isSelected(example)) {
+                results[category.id][question.id][example.id] = true;
+              }
+            });
+
+            if (question.others !== undefined && question.others !== "") {
+              results[category.id][question.id].others = question.others;
+            }
+          }
+        });
+      }
+    });
+
+    return results;
   };
 }]);
