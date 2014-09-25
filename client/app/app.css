@@ -44,6 +44,7 @@
 
 .btn-questions {
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .achievement {
@@ -78,3 +79,9 @@
 .question-text {
     font-size: 16px;
 }
+
+.footer {
+  background: url(images/footer.png) center top repeat-x;
+  height: 30px;
+}
+
