@@ -18,14 +18,19 @@ var server = http.createServer(function(req, res) {
       questions.insert(jsonData, function(err, doc) {
         if (err) throw err;
 
+        res.writeHead(200, { 'Content-Type': 'application/json' });
+
         console.log(doc);
+        res.write(JSON.stringify(doc));
+
+        res.end();
       });
 
       //sendMail(jsonData.email, emailBody(jsonData));
     });
+  } else {
+    res.end();
   }
-
-  res.end();
 });
 
 server.listen(3000);

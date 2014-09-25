@@ -24,12 +24,23 @@ config(['$routeProvider', function($routeProvider) {
     });
 }]).
 service('sharedProperties', function() {
-  var results = {};
+  var results = {},
+      questions = {};
 
   return {
+    getQuestions: function() {
+      return questions;
+    },
+
+    setQuestions: function(value) {
+      questions = value;
+      return questions;
+    },
+
     getResults: function() {
       return results;
     },
+
     setResults: function(value) {
       results = value;
       return results;

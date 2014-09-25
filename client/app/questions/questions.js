@@ -11,6 +11,7 @@ angular.module('nocheInv.questions', ['ngRoute'])
 
 .controller('questionsCtrl', ['$scope', '$http', '$location', 'sharedProperties', function($scope, $http, $location, sharedProperties) {
   $http.get('questions/questions.json').success(function(data) {
+    sharedProperties.setQuestions(data);
     $scope.categories = data;
   });
 
@@ -50,7 +51,7 @@ angular.module('nocheInv.questions', ['ngRoute'])
 
     $http.post('/results', results)
     .success(function(data) {
-      sharedProperties.setResults(results);
+      sharedProperties.setResults(data);
 
       $location.path('/results');
     })
