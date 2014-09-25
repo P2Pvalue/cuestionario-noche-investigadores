@@ -16,7 +16,7 @@
         <div class="col-md-4 text-right">
           <ul class="question-examples">
             <li ng-repeat="example in question.examples">
-              <button type="button" class="btn btn-default btn-example btn-text" ng-click="selectExample(example)" ng-class="{'btn-text' : example.image}" ng-class="{active : isSelected(example)}">
+              <button type="button" class="btn btn-default btn-example btn-text" ng-click="selectExample(example)" ng-class="{active : isSelected(example)}">
               <div ng-if="example.image">
                 <img ng-src="images/logos/{{example.id}}.png" title="{{example.name}}" id="img-{{example-name}}">
               </div>
