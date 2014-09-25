@@ -1,3 +1,4 @@
+var fs = require('fs');
 var http = require('http');
 var nodemailer = require('nodemailer');
 var db = require('monk')('localhost/diagnostico');
@@ -35,16 +36,25 @@ var server = http.createServer(function(req, res) {
 
 server.listen(3000);
 
+var emailCredentials = function() {
+  var cred = {};
+  
+  fs.readFile(__dirname + '/email.json', function(err, data) {
+    if (!err) {
+      cred = JSON.parse(data.toString());
+    }
+  });
+
+  return cred;
+};
+
 // create reusable transporter object using SMTP transport
 //
 // NB! No need to recreate the transporter object. You can use
 // the same transporter object for all e-mails
 var transporter = nodemailer.createTransport({
   service: 'Gmail',
-  auth: {
-    user: 'gmail.user@gmail.com',
-    pass: 'userpass'
-  }
+  auth: emailCredentials()
 });
 
 var sendEmail = function(address, data) {
@@ -66,3 +76,4 @@ var sendEmail = function(address, data) {
     }
   });
 };
+
