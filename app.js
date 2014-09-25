@@ -28,7 +28,7 @@ var server = http.createServer(function(req, res) {
           res.end();
         });
       } else {
-      //sendMail(jsonData.email, emailBody(jsonData));
+        sendEmail(jsonData.email, emailBody(jsonData));
         res.end();
       }
 
@@ -44,10 +44,14 @@ var emailCredentials = function() {
   var cred = {};
   
   fs.readFile(__dirname + '/email.json', function(err, data) {
-    if (!err) {
+    if (err) {
+      console.log(err);
+    } else {
       cred = JSON.parse(data.toString());
     }
   });
+
+  console.log('cred' + cred);
 
   return cred;
 };
@@ -61,16 +65,21 @@ var transporter = nodemailer.createTransport({
   auth: emailCredentials()
 });
 
-var sendEmail = function(address, data) {
+var emailBody = function(json) {
+  return "data";
+};
+
+var sendEmail = function(address, body) {
   // setup e-mail data with unicode symbols
   var mailOptions = {
     from: 'UCM P2Pvalue <p2pvalue@ucm.es>', // sender address
     to: address, // list of receivers
     subject: 'Cuestionario Noche de los Investigadores', // Subject line
-    text: 'Hello world ✔', // plaintext body
-    html: '<b>Hello world ✔</b>' // html body
+    text: body
   };
 
+  console.log(mailOptions);
+  console.log(emailCredentials());
   // send mail with defined transport object
   transporter.sendMail(mailOptions, function(error, info){
     if(error){
