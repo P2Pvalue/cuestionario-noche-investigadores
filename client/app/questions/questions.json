@@ -1,9 +1,11 @@
 [
   {
     "icon": "edit",
+    "id":"collaborativeWriting",
     "text": "Escritura colaborativa",
     "questions": [
       {
+        "id": "wikipedia",
         "text": "Consultado la Wikipedia",
         "examples": [
           {
@@ -15,6 +17,7 @@
         ]
       },
       {
+        "id": "collaborativeGuide",
         "text": "Usado una guía de viajes creada colaborativamente",
         "other_examples": true,
         "examples": [
@@ -27,6 +30,7 @@
         ]
       },
       {
+        "id": "subtitles",
         "text": "Descargado subtítulos de una serie con subtitulos creados por sus fans",
         "other_examples": true,
         "examples": [
@@ -40,9 +44,11 @@
     ]
   },
   {"icon": "home",
+   "id": "housing",
    "text": "Alojamiento colaborativo",
    "questions": [
      {
+       "id":"collaborativeEconomyHousing",
        "text": "Alojado en un sitio de economía colaborativa",
        "other_examples": true,
        "examples": [
@@ -55,6 +61,7 @@
        ]
      },
      {
+       "id": "communityHousing",
        "text": "Buscado alojamiento en la casa de alguien que la quiere compartir con viajeros",
        "other_examples": true,
        "examples": [
@@ -72,11 +79,13 @@
    ]
   },  {
     "icon": "car",
+    "id": "travel",
     "text": "Comundades de Transporte",
     "questions":
     [
       {
-        "text": "Has compartido coche para viajar",
+        "id": "shareCar",
+        "text": "Compartido coche para viajar",
         "other_examples": true,
         "examples":
         [
@@ -102,9 +111,11 @@
   },
   {
     "icon": "code-fork",
+    "id":"FLOSS",
     "text": "Software Libre",
     "questions": [
       {
+        "id": "browser",
         "text": "Usado un navegador web libre",
         "other_examples": true,
         "examples": [
@@ -123,6 +134,7 @@
         ]
       },
       {
+        "id": "android",
         "text": "Usado un teléfono con Android",
         "examples": [
           {
@@ -134,6 +146,7 @@
         ]
       },
       {
+        "id":"blog",
         "text": "Tienes un blog que usa software libre",
         "other_examples": true,
         "examples": [
@@ -151,6 +164,7 @@
         ]
       },
       {
+        "id": "distro",
         "text": "Conoces alguna distribución GNU/Linux",
         "examples": [
           {
@@ -176,9 +190,11 @@
 
   {
     "icon": "globe",
+    "id":"map",
     "text": "Collaborative Mapping",
     "questions": [
       {
+        "id": "collaborativeMap",
         "text": "Consultado un mapa de tu ciudad creado por tus vecinos",
         "other_examples":true,
         "examples": [
@@ -189,26 +205,30 @@
           }
         ]
       },
-      {"text": "Visto un mapa de desastres naturales creado al momento",
-       "other_examples": true,
-       "examples":
-       [
-         {
-           "id": "ushahidi",
-           "name": "Ushahidi",
-           "link": "http://www.ushahidi.com/",
+      {
+        "id":"crowdsourcingMap",
+        "text": "Visto un mapa de desastres naturales creado al momento",
+        "other_examples": true,
+        "examples":
+        [
+          {
+            "id": "ushahidi",
+            "name": "Ushahidi",
+            "link": "http://www.ushahidi.com/",
             "image": true
-         }
-       ]
+          }
+        ]
       }
     ]
   },
   {
     "icon":"gears",
+    "id": "makerSpaces",
     "text":"Talleres comunitarios",
     "questions":
     [
       {
+        "id":"bicilab",
         "text": "Aprender a arreglar tu bicicleta con otras personas en el \"Bicilab\" de tu bario.",
         "other_examples": true,
         "examples":
@@ -227,6 +247,7 @@
         ]
       },
       {
+        "id":"3Dprinting",
         "text":"Usado una impresora 3D diseñada colaborativamente",
         "other_examples":true,
         "examples":
@@ -240,6 +261,7 @@
         ]
       },
       {
+        "id": "makerspace",
         "text":"Conoces un \"MakerSpace\"",
         "other_examples":true,
         "examples":[
@@ -255,11 +277,13 @@
   },
   {
     "icon": "exchange",
+    "id": "share",
     "text": "Compartir",
     "questions":
     [
       {
-        "text": "Has descargado una película de una red P2P",
+        "id": "download",
+        "text": "Descargado una película de una red P2P",
         "other_examples": true,
         "examples":
         [
@@ -276,7 +300,9 @@
           }
         ]
       },
-      { "text": "Compartido libros que acabas de leer",
+      {
+        "id": "bookcross",
+        "text": "Compartido libros que acabas de leer",
         "other_examples": true,
         "examples":
         [
@@ -288,6 +314,7 @@
         ]
       },
       {
+        "id": "sellGive",
         "text": "Vendido o regalado algo que ya no usas",
         "other_examples": true,
         "examples":
@@ -308,10 +335,12 @@
   },
   {
     "icon":"money",
-    "text":"Economía ",
+    "id": "economy",
+    "text":"Economía",
     "questions":
     [
       {
+        "id": "criptocurrency",
         "text":"Conoces BitCoin u otras criptomonedas",
         "other_examples": true,
         "examples": [
@@ -324,7 +353,8 @@
         ]
       },
       {
-        "text": "Has participado en un banco de tiempo",
+        "id": "timebank",
+        "text": "Participado en un banco de tiempo",
         "other_examples": true,
         "examples":
         [
@@ -335,24 +365,26 @@
         ]
       },
       {
+        "id": "socialCurrency",
         "text": "Conoces alguna moneda social o alternativa",
         "other_examples": true,
         "examples":
         [
           {
             "id": "boniato",
-            "text": "Boniato",
+            "name": "Boniato",
             "link": "https://madrid.mercadosocial.net/moneda/do"
           },
           {
             "id": "mora",
-            "text": "Mora",
+            "name": "Mora",
             "link": "http://intercambiosierranorte.wordpress.com/"
           }
         ]
       },
       {
-        "text": "Has donado en una campaña de \"CrowdFunding\"",
+        "id": "crowdfunding",
+        "text": "Donado en una campaña de \"CrowdFunding\"",
         "other_examples": "true",
         "examples":
         [
@@ -366,80 +398,89 @@
       }
     ]
   },
-  {"icon":"newspaper-o",
-   "text": "Información Libre y Comunitaria",
-   "questions":
-   [
-     {
-       "text": "Escuchado una radio libre o comunitaria",
-       "other_examples":true,
-       "examples": [
-         {
-           "id": "radioela",
-           "text": "Radio ELA",
-           "link": "https://radioela.org"
-         },
-         {
-           "id": "radioalmenara",
-           "Text": "Radio Almenara",
-           "link": "http://www.radioalmenara.net/"
-         },
-         {
-           "id": "radioalmenara",
-           "Text": "Radio Almenara",
-           "link": "http://www.radioalmenara.net/"
-         }
-       ]
-     },
-     {
-       "text": "Leido noticias ordenadas colaborativamente",
-       "other_examples":true,
-       "examples": [
-         {
-           "id": "meneame",
-           "text": "Menéame",
-           "link": "https://www.meneame.net/"
-         }
-       ]
-     },
-     {
-       "text": "Consultado un sitio de noticias creadas por los usuarios",
-       "other_examples":true,
-       "examples": [
-         {
-           "id": "wikinews",
-           "text": "WikiNews",
-           "link": "https://es.wikinews.org/"
-         }
-       ]
-     }
-
-   ]
-
+  {
+    "icon":"newspaper-o",
+    "id":"citizenMedia",
+    "text": "Información Libre y Comunitaria",
+    "questions":
+    [
+      {
+        "id":"radio",
+        "text": "Escuchado una radio libre o comunitaria",
+        "other_examples":true,
+        "examples": [
+          {
+            "id": "radioela",
+            "name": "Radio ELA",
+            "link": "https://radioela.org",
+            "image":true
+          },
+          {
+            "id": "radioalmenara",
+            "name": "Radio Almenara",
+            "link": "http://www.radioalmenara.net/"
+          },
+          {
+            "id": "radioalmenara",
+            "name": "Radio Almenara",
+            "link": "http://www.radioalmenara.net/"
+          }
+        ]
+      },
+      {
+        "id":"collaborativeFilteredNews",
+        "text": "Leido noticias ordenadas colaborativamente",
+        "other_examples":true,
+        "examples": [
+          {
+            "id": "meneame",
+            "name": "Menéame",
+            "link": "https://www.meneame.net/"
+          }
+        ]
+      },
+      {
+        "id": "userCreatedNews",
+        "text": "Consultado un sitio de noticias creadas por los usuarios",
+        "other_examples":true,
+        "examples": [
+          {
+            "id": "wikinews",
+            "name": "WikiNews",
+            "link": "https://es.wikinews.org/"
+          }
+        ]
+      }
+    ]
   },
   {
     "icon": "lemon-o",
+    "id": "agroecology",
     "text": "Comunidades Agroecologicas",
     "questions":
     [
       {
+        "id": "cooperative",
         "text": "Comido alimentos de una cooperativa agroecológica",
         "other_examples":true,
         "examples":
         [
           {
             "id": "bah",
-            "text": "BAH!: Bajo el Asfalto está la huerta",
-            "link": "http://bah.ourproject.org/"
+            "name": "BAH!",
+            "link": "http://bah.ourproject.org/",
+            "image": true
+
           },
           {
             "id": "sas",
-            "text": "SaS: Surco a Surco",
+            "name": "SaS: Surco a Surco",
             "link": "http://sindominio.net/wp/surcoasurco/"
           }
         ]
       },
       {
+        "id": "urbanAgriculture",
         "text": "Participado en el huerto urbano del barrio",
         "other_examples": true,
         "examples":
