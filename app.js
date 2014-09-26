@@ -103,7 +103,7 @@ var composeAndSendEmail = function(json) {
                 console.log("\nj " + j);
                 var ex = categories[key].questions[i].examples[j].id;
                 if (json[key][que].hasOwnProperty(ex)){
-                  text +=  "  * "categories[key].questions[i].examples[j].name + ": "+ categories[key].questions[i].examples[j].link + ",\n";
+                  text +=  "  * " + categories[key].questions[i].examples[j].name + ": "+ categories[key].questions[i].examples[j].link + ",\n";
                 }
               }
             }
