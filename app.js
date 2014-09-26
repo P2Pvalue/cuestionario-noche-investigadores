@@ -58,8 +58,8 @@ var composeAndSendEmail = function(json) {
     if (err) {
       console.log(err);
     } else {
-      text += "Enhorabuena, ¡Los bienes comunes producidos colaborativamente ya forman parte de tu vida!\n\n";
-      text += "Las comunidades del procomún ya forman parte de tu vida,  al menos en los siguientes aspectos:\n";
+      text += "Enhorabuena, ¡los bienes comunes producidos colaborativamente ya forman parte de tu vida!\n\n";
+      text += "Las comunidades del procomún ya forman parte de tu vida,  al menos en los siguientes aspectos:\n\n";
       jsonQuestions = JSON.parse(data.toString());
       var categories = {};
       for (var i = 0, len = jsonQuestions.length; i<len; i++){
@@ -78,8 +78,9 @@ var composeAndSendEmail = function(json) {
           notKnownCategories.push(categories[key]);
         }
       }
-      text += "\n";
-      text += "- Descubre nuevas comunidades:\n";
+      text += "\n\n";
+      text += "Ahora puedes...\n\n"
+      text += "- Descubrir nuevas comunidades:\n";
       for (var i = 0, lengthI = notKnownCategories.length; i<lengthI; i++){
         var category = notKnownCategories[i];
         text += category.text + ": ";
