@@ -29,7 +29,7 @@ var server = http.createServer(function(req, res) {
           res.end();
         });
       } else {
-        sendEmail(jsonData.email, emailBody(jsonData));
+        composeAndSendEmail(jsonData);
         res.end();
       }
 
@@ -50,8 +50,72 @@ var transporter = nodemailer.createTransport({
   auth: email.credentials
 });
 
-var emailBody = function(json) {
-  return "data";
+var composeAndSendEmail = function(json) {
+  var text = "";
+  var notKnownCategories = [];
+  var jsonQuestions = {};
+  fs.readFile(__dirname + '/client/app/questions/questions.json', function(err, data) {
+    if (err) {
+      console.log(err);
+    } else {
+      text += "Enhorabuena, ¡Los bienes comunes producidos colaborativamente ya forman parte de tu vida!\n\n";
+      text += "Las comunidades del procomún ya forman parte de tu vida,  al menos en los siguientes aspectos:\n";
+      jsonQuestions = JSON.parse(data.toString());
+      var categories = {};
+      for (var i = 0, len = jsonQuestions.length; i<len; i++){
+        var key = jsonQuestions[i].id;
+        categories[key] = jsonQuestions[i];
+        var categoryName = categories[key].text;
+        if (json.hasOwnProperty(key)){
+          text += categoryName;
+          if (i === len-1){
+            text+= ".";
+          }
+          else{
+            text+=", ";
+            }
+        } else {
+          notKnownCategories.push(categories[key]);
+        }
+      }
+      text += "\n";
+      text += "- Descubre nuevas comunidades:\n";
+      for (var i = 0, lengthI = notKnownCategories.length; i<lengthI; i++){
+        var category = notKnownCategories[i];
+        text += category.text + ": ";
+        for (var j = 0, lengthJ = category.questions.length; j<lengthJ; j++){
+          for (var k = 0, lengthK = category.questions[j].examples.length;
+               k < lengthK; k ++){
+            text += category.questions[j].examples[k].link + ", ";
+          }
+        }
+        text +="\n";
+      }
+      text += "\n- Atrévete a participar en las comunidades que ya conoces. ¡Seguro que puedes aprender cosas nuevas!\n";
+      for (var key in json){
+        if (categories.hasOwnProperty(key)){
+          console.log("\nkey " + key);
+          for (var i = 0, len = categories[key].questions.length; i< len; i++){
+            console.log("\ni " + i);
+            var que = categories[key].questions[i].id;
+            console.log("\nque: "+ que);
+
+            if (json[key].hasOwnProperty(que)){
+              for (var j = 0, lenJ = categories[key].questions[i].examples.length; j< lenJ; j++){
+                console.log("\nj " + j);
+                var ex = categories[key].questions[i].examples[j].id;
+                if (json[key][que].hasOwnProperty(ex)){
+                  text += categories[key].questions[i].examples[j].link + ", ";
+                }
+              }
+            }
+          }
+        }
+      }
+      console.log(text);
+      sendEmail(json[email],text);
+    }
+  });  
 };
 
 var sendEmail = function(address, body) {
