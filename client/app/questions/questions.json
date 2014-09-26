@@ -98,7 +98,8 @@
           {
             "id": "uber",
             "name": "Uber",
-            "link": "https://www.uber.com/"
+            "link": "https://www.uber.com/",
+            "image": true
           },
           {
             "id": "amovens",
@@ -159,13 +160,15 @@
           {
             "id": "joomla",
             "name": "Joomla",
-            "link": "http://www.joomla.org/"
+            "link": "http://www.joomla.org/",
+            "image": true
           }
         ]
       },
       {
         "id": "distro",
         "text": "Usado alguna distribución GNU/Linux",
+        "other_examples": true,
         "examples": [
           {
             "id": "debian",
@@ -176,12 +179,14 @@
           {
             "id": "ubuntu",
             "name": "Ubuntu",
-            "link": "http://www.ubuntu.com/"
+            "link": "http://www.ubuntu.com/",
+            "image": true
           },
           {
             "id": "fedora",
             "name": "Fedora",
-            "link": "http://fedoraproject.org/"
+            "link": "http://fedoraproject.org/",
+            "image": true
           }
         ]
       }
@@ -290,7 +295,8 @@
           {
             "id":"emule",
             "name":"Emule",
-            "link":"http://www.emule-project.net"
+            "link":"http://www.emule-project.net",
+            "image": true
           },
           {
             "id": "bittorrent",
@@ -327,7 +333,8 @@
           {
             "id": "ebay",
             "name": "Ebay",
-            "link": "http://www.ebay.com"
+            "link": "http://www.ebay.com",
+            "image": true
           }
         ]
       }
@@ -419,11 +426,6 @@
             "id": "radioalmenara",
             "name": "Radio Almenara",
             "link": "http://www.radioalmenara.net/"
-          },
-          {
-            "id": "radioalmenara",
-            "name": "Radio Almenara",
-            "link": "http://www.radioalmenara.net/"
           }
         ]
       },
@@ -435,7 +437,8 @@
           {
             "id": "meneame",
             "name": "Menéame",
-            "link": "https://www.meneame.net/"
+            "link": "https://www.meneame.net/",
+            "image":true
           }
         ]
       },
