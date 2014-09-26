@@ -114,6 +114,8 @@ var composeAndSendEmail = function(json) {
         }
       }
       console.log(text);
+      text += "Gracias por participar en el evento Crea, Colabora, Modifica, Comparte de la Noche de los Investigadores en Madrid. Esperamos que hayas disfrutado del evento, descubierto cosas interesantes y despertado tu curiosidad por algunas comunidades.\n";
+      text += "Más información del proyecto y del grupo de investigación en: http://p2pvalue.eu y http://grasia.fdi.ucm.es/main/";
       sendEmail(json.email,text);
     }
   });  
