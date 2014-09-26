@@ -147,7 +147,7 @@
       },
       {
         "id":"blog",
-        "text": "Tienes un blog que usa software libre",
+        "text": "Escrito en un blog que usa software libre",
         "other_examples": true,
         "examples": [
           {
@@ -165,7 +165,7 @@
       },
       {
         "id": "distro",
-        "text": "Conoces alguna distribución GNU/Linux",
+        "text": "Usado alguna distribución GNU/Linux",
         "examples": [
           {
             "id": "debian",
@@ -229,7 +229,7 @@
     [
       {
         "id":"bicilab",
-        "text": "Aprender a arreglar tu bicicleta con otras personas en el \"Bicilab\" de tu bario.",
+        "text": "Aprendido a arreglar tu bicicleta con otras personas en el \"Bicilab\" de tu bario.",
         "other_examples": true,
         "examples":
         [
@@ -262,7 +262,7 @@
       },
       {
         "id": "makerspace",
-        "text":"Conoces un \"MakerSpace\"",
+        "text":"Conocido un \"MakerSpace\"",
         "other_examples":true,
         "examples":[
           {
@@ -341,7 +341,7 @@
     [
       {
         "id": "criptocurrency",
-        "text":"Conoces BitCoin u otras criptomonedas",
+        "text":"Usado BitCoin u otras criptomonedas",
         "other_examples": true,
         "examples": [
           {
@@ -366,7 +366,7 @@
       },
       {
         "id": "socialCurrency",
-        "text": "Conoces alguna moneda social o alternativa",
+        "text": "Usado alguna moneda social o alternativa",
         "other_examples": true,
         "examples":
         [
@@ -429,7 +429,7 @@
       },
       {
         "id":"collaborativeFilteredNews",
-        "text": "Leido noticias ordenadas colaborativamente",
+        "text": "Leído noticias ordenadas colaborativamente",
         "other_examples":true,
         "examples": [
           {
