@@ -6,6 +6,11 @@
 }
 
 @font-face {
+  font-family: "Dax Wide Light";
+  src: url(fonts/dax-wide-light.ttf);
+}
+
+@font-face {
   font-family: "Verdana";
   src: url(fonts/verdana.ttf);
 }
@@ -21,6 +26,7 @@ body {
 
 .page-header .subtitle {
   margin-top: 40px;
+  font-family: "Dax Wide Light";
 }
 
 .category {
