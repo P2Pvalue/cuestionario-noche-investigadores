@@ -96,18 +96,14 @@ var composeAndSendEmail = function(json) {
       text += "\n... atreverte a participar en las comunidades que ya conoces. ¡Seguro que puedes aprender cosas nuevas!\n\n";
       for (var key in json){
         if (categories.hasOwnProperty(key)){
-          console.log("\nkey " + key);
           for (var i = 0, len = categories[key].questions.length; i< len; i++){
-            console.log("\ni " + i);
             var que = categories[key].questions[i].id;
-            console.log("\nque: "+ que);
-
             if (json[key].hasOwnProperty(que)){
               for (var j = 0, lenJ = categories[key].questions[i].examples.length; j< lenJ; j++){
                 console.log("\nj " + j);
                 var ex = categories[key].questions[i].examples[j].id;
                 if (json[key][que].hasOwnProperty(ex)){
-                  text += categories[key].questions[i].examples[j].link + ", ";
+                  text +=  categories[key].questions[i].examples[j].name + ": "+ categories[key].questions[i].examples[j].link + ",\n";
                 }
               }
             }
