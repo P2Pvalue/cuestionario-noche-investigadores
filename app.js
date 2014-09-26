@@ -81,10 +81,10 @@ var composeAndSendEmail = function(json) {
       }
       text += "\n\n";
       text += "Ahora puedes...\n\n";
-      text += "- Descubrir nuevas comunidades:\n";
+      text += "... Descubrir nuevas comunidades:\n";
       for (var i = 0, lengthI = notKnownCategories.length; i<lengthI; i++){
         var category = notKnownCategories[i];
-        text += "* " + category.text + ": ";
+        text += "  * " + category.text + ": ";
         for (var j = 0, lengthJ = category.questions.length; j<lengthJ; j++){
           for (var k = 0, lengthK = category.questions[j].examples.length;
                k < lengthK; k ++){
@@ -93,7 +93,7 @@ var composeAndSendEmail = function(json) {
         }
         text +="\n";
       }
-      text += "\n- Atrévete a participar en las comunidades que ya conoces. ¡Seguro que puedes aprender cosas nuevas!\n";
+      text += "\n... Atreverte a participar en las comunidades que ya conoces. ¡Seguro que puedes aprender cosas nuevas!\n";
       for (var key in json){
         if (categories.hasOwnProperty(key)){
           console.log("\nkey " + key);
@@ -115,8 +115,9 @@ var composeAndSendEmail = function(json) {
         }
       }
       console.log(text);
-      text += "Gracias por participar en el evento Crea, Colabora, Modifica, Comparte de la Noche de los Investigadores en Madrid. Esperamos que hayas disfrutado del evento, descubierto cosas interesantes y despertado tu curiosidad por algunas comunidades.\n";
-      text += "Más información del proyecto y del grupo de investigación en: http://p2pvalue.eu y http://grasia.fdi.ucm.es/main/";
+      text += "\n\nGracias por participar en el evento \"Crea, Colabora, Modifica, Comparte\" de la Noche de los Investigadores en Madrid. Esperamos que hayas disfrutado del evento, descubierto cosas interesantes y despertado tu curiosidad por algunas comunidades.\n\n";
+      text += "Puedes encontrar más información del proyecto y del grupo de investigación en: http://p2pvalue.eu y http://grasia.fdi.ucm.es/";
+
       sendEmail(json.email,text);
     }
   });  
