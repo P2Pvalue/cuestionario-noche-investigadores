@@ -93,6 +93,7 @@ var composeAndSendEmail = function(json) {
         }
         text +="\n";
       }
+      text += "  * En el directorio del proyecto P2Pvalue hemos recopilado cientos de comunidades de producción colaborativa de bienes comunes. Puedes acceder a él en: http://directory.p2pvalue.eu/.\n";
       text += "\n... atreverte a involucrarte más en las comunidades que ya conoces. ¡Seguro que puedes aprender cosas nuevas!\n\n";
       for (var key in json){
         if (categories.hasOwnProperty(key)){
