@@ -60,6 +60,7 @@ var composeAndSendEmail = function(json) {
     } else {
       text += "Enhorabuena, ¡los bienes comunes producidos colaborativamente ya forman parte de tu vida!\n\n";
       text += "Las comunidades del procomún ya forman parte de tu vida,  al menos en los siguientes aspectos:\n\n";
+      text += "  ";
       jsonQuestions = JSON.parse(data.toString());
       var categories = {};
       for (var i = 0, len = jsonQuestions.length; i<len; i++){
@@ -79,11 +80,11 @@ var composeAndSendEmail = function(json) {
         }
       }
       text += "\n\n";
-      text += "Ahora puedes...\n\n"
+      text += "Ahora puedes...\n\n";
       text += "- Descubrir nuevas comunidades:\n";
       for (var i = 0, lengthI = notKnownCategories.length; i<lengthI; i++){
         var category = notKnownCategories[i];
-        text += category.text + ": ";
+        text += "* " + category.text + ": ";
         for (var j = 0, lengthJ = category.questions.length; j<lengthJ; j++){
           for (var k = 0, lengthK = category.questions[j].examples.length;
                k < lengthK; k ++){
