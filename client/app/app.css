@@ -18,6 +18,10 @@ body {
   font-family: "Dax Wide Regular"
 }
 
+.page-header .subtitle {
+  margin-top: 40px;
+}
+
 .category {
   overflow: hidden;
 }
@@ -46,10 +50,10 @@ body {
 
 .btn-example, .input-other-examples {
   margin: 10px;
+  width: 174px;
 }
 
 .btn-example {
-  width: 174px;
   height: 70px;
 }
 
