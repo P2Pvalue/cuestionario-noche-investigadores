@@ -113,7 +113,7 @@ var composeAndSendEmail = function(json) {
         }
       }
       console.log(text);
-      sendEmail(json[email],text);
+      sendEmail(json.email,text);
     }
   });  
 };
