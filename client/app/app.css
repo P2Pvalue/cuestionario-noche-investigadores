@@ -11,11 +11,12 @@
 }
 
 body {
-  font-family: "Verdana"
+  font-family: "Verdana";
 }
 
 .page-header {
-  font-family: "Dax Wide Regular"
+  font-family: "Dax Wide Regular";
+  border-bottom: 0px !important;
 }
 
 .page-header .subtitle {
