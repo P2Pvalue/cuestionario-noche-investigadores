@@ -217,7 +217,7 @@
       },
       {
         "id":"crowdsourcingMap",
-        "text": "Searched Visto un mapa de desastres naturales creado al momento",
+        "text": "Search or seen a map of natural disasters created on live?",
         "other_examples": true,
         "examples":
         [
@@ -234,7 +234,7 @@
   {
     "icon":"gears",
     "id": "makerSpaces",
-    "text":"Talleres comunitarios",
+    "text":"Maker Spaces",
     "questions":
     [
       {
@@ -258,7 +258,7 @@
       },
       {
         "id":"3Dprinting",
-        "text":"Usado una impresora 3D diseñada colaborativamente",
+        "text":"Have you ever used a 3-D printer designed collaboratively?",
         "other_examples":true,
         "examples":
         [
@@ -293,7 +293,7 @@
     [
       {
         "id": "download",
-        "text": "Descargado una película de una red P2P",
+        "text": "Have you ever download a movie using a P2P application?",
         "other_examples": true,
         "examples":
         [
@@ -313,7 +313,7 @@
       },
       {
         "id": "bookcross",
-        "text": "Compartido libros que acabas de leer",
+        "text": "Share a book you have just read",
         "other_examples": true,
         "examples":
         [
@@ -326,20 +326,14 @@
       },
       {
         "id": "sellGive",
-        "text": "Vendido o regalado algo que ya no usas",
+        "text": "Sell or give something you do not use anymore?",
         "other_examples": true,
         "examples":
         [
           {
-            "id": "nolotiro",
-            "name": "Nolotiro",
-            "link": "http://nolotiro.org/"
-          },
-          {
-            "id": "ebay",
-            "name": "Ebay",
-            "link": "http://www.ebay.com",
-            "image": true
+            "id": "freecycle",
+            "name": "FreeCycle",
+            "link": "https://www.freecycle.org/"
           }
         ]
       }
@@ -366,13 +360,13 @@
       },
       {
         "id": "timebank",
-        "text": "Participado en un banco de tiempo",
+        "text": "Have you ever participated in a Time Bank?",
         "other_examples": true,
         "examples":
         [
-          {"id": "bdtrivas",
-           "name": "Banco de tiempo Rivas",
-           "link": "http://www.bancodeltiemporivas.org/"
+          {"id": "timebankmedia",
+           "name": "Time Bank Media",
+           "link": "http://timebankmedia.org/"
           }
         ]
       },
