@@ -386,8 +386,7 @@
           {
             "id": "kickstarter",
             "name": "Kickstarter",
-            "link": "https://www.kickstarter.com/",
-            "image": true
+            "link": "https://www.kickstarter.com/"
           }
 
         ]
@@ -408,8 +407,7 @@
           {
             "id": "reddit",
             "name": "Reddit",
-            "link": "https://www.reddit.com/",
-            "image":true
+            "link": "https://www.reddit.com/"
           }
         ]
       },
