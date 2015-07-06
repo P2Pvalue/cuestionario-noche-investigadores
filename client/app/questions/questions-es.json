@@ -1,0 +1,505 @@
+[
+  {
+    "icon": "edit",
+    "id":"collaborativeWriting",
+    "text": "Collaborative Writing",
+    "questions": [
+      {
+        "id": "wikipedia",
+        "text": "Checked out Wikipedia?",
+        "examples": [
+          {
+            "id": "wikipedia",
+            "name": "Wikipedia",
+            "link": "http://www.wikipedia.org",
+            "image": true
+          }
+        ]
+      },
+      {
+        "id": "collaborativeGuide",
+        "text": "Used a travel guide that was collaboratively created?",
+        "other_examples": true,
+        "examples": [
+          {
+            "id": "wikitravel",
+            "name": "wikitravel",
+            "link": "http://wikitravel.org",
+            "image": true
+          }
+        ]
+      },
+      {
+        "id": "subtitles",
+        "text": "Downloaded subtitles from a series/film created by their fans?",
+        "other_examples": true,
+        "examples": [
+          {
+            "id": "opensubtitles",
+            "name": "OpenSubtitles",
+            "link": "http://www.opensubtitles.org"
+          }
+        ]
+      }
+    ]
+  },
+  {"icon": "home",
+   "id": "housing",
+   "text": "Collaborative Housing",
+   "questions": [
+     {
+       "id":"collaborativeEconomyHousing",
+       "text": "Hosted by a place within the collaborative economy?",
+       "other_examples": true,
+       "examples": [
+         {
+           "id": "airbnb",
+           "name": "AirBnB",
+           "link": "https://www.airbnb.com/",
+           "image": true
+         }
+       ]
+     },
+     {
+       "id": "communityHousing",
+       "text": "Searched a host who is sharing their place with travellers?",
+       "other_examples": true,
+       "examples": [
+         { "id": "couchsurfing",
+           "name": "CouchSurfing",
+           "link": "https://www.couchsurfing.org/",
+            "image": true
+         },
+         { "id": "hospitalityclub",
+           "name": "Hospitality Club",
+           "link": "http://www.hospitalityclub.org/"
+         }
+       ]
+     }
+   ]
+  },  {
+    "icon": "car",
+    "id": "travel",
+    "text": "Transport Communities",
+    "questions":
+    [
+      {
+        "id": "shareCar",
+        "text": "Shared car to travel somewhere?",
+        "other_examples": true,
+        "examples":
+        [
+          {
+            "id": "blablacar",
+            "name": "BlaBlaCar",
+            "link": "http://www.blablacar.es/",
+            "image": true
+          },
+          {
+            "id": "uber",
+            "name": "Uber",
+            "link": "https://www.uber.com/",
+            "image": true
+          },
+          {
+            "id": "amovens",
+            "name": "Amovens",
+            "link": "http://us.amovens.com"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "icon": "code-fork",
+    "id":"FLOSS",
+    "text": "Free/Libre/Open Source Software",
+    "questions": [
+      {
+        "id": "browser",
+        "text": "Using a free softwrae browser?",
+        "other_examples": true,
+        "examples": [
+          {
+            "id": "firefox",
+            "name": "Firefox",
+            "link": "https://www.mozilla.org/firefox/",
+            "image": true
+          },
+          {
+            "id": "chromium",
+            "name": "Chromium",
+            "link": "http://www.chromium.org/",
+            "image": true
+          }
+        ]
+      },
+      {
+        "id": "android",
+        "text": "Used a phone with Android?",
+        "examples": [
+          {
+            "id": "android",
+            "name": "Android",
+            "link": "http://www.android.com/",
+            "image": true
+          }
+        ]
+      },
+      {
+        "id":"blog",
+        "text": "Written in a blog that uses free software?",
+        "other_examples": true,
+        "examples": [
+          {
+            "id": "wordpress",
+            "name": "Wordpress",
+            "link": "http://www.wordpress.org/",
+            "image": true
+          },
+          {
+            "id": "joomla",
+            "name": "Joomla",
+            "link": "http://www.joomla.org/",
+            "image": true
+          },
+          {
+            "id": "drupal",
+            "name": "Drupal",
+            "link": "http://www.drupal.org/"
+          }
+        ]
+      },
+      {
+        "id": "distro",
+        "text": "Used any version of GNU/Linux?",
+        "other_examples": true,
+        "examples": [
+          {
+            "id": "debian",
+            "name": "Debian",
+            "link": "http://www.debian.org/",
+            "image": true
+          },
+          {
+            "id": "ubuntu",
+            "name": "Ubuntu",
+            "link": "http://www.ubuntu.com/",
+            "image": true
+          },
+          {
+            "id": "fedora",
+            "name": "Fedora",
+            "link": "http://fedoraproject.org/",
+            "image": true
+          }
+        ]
+      }
+    ]
+  },
+
+  {
+    "icon": "globe",
+    "id":"map",
+    "text": "Collaborative Mapping",
+    "questions": [
+      {
+        "id": "collaborativeMap",
+        "text": "Consulted a map of your city created by your neighbours?",
+        "other_examples":true,
+        "examples": [
+          {
+            "id": "openstreetmap",
+            "name": "OpenStreetMap",
+            "link": "https://www.openstreetmap.org"
+          }
+        ]
+      },
+      {
+        "id":"crowdsourcingMap",
+        "text": "Searched Visto un mapa de desastres naturales creado al momento",
+        "other_examples": true,
+        "examples":
+        [
+          {
+            "id": "ushahidi",
+            "name": "Ushahidi",
+            "link": "http://www.ushahidi.com/",
+            "image": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "icon":"gears",
+    "id": "makerSpaces",
+    "text":"Talleres comunitarios",
+    "questions":
+    [
+      {
+        "id":"bicilab",
+        "text": "Aprendido a arreglar tu bicicleta con otras personas en el \"Bicilab\" de tu bario.",
+        "other_examples": true,
+        "examples":
+        [
+          {
+            "id":"recicletos",
+            "name": "Recicletos",
+            "link":"http://blogs.latabacalera.net/recicletos/",
+            "image": true
+          },
+          {
+            "id": "bicilabenre",
+            "name":"Bicilab de la Enredadera",
+            "link":"http://laenredaderadetetuan.blogspot.com.es/search/label/Bicilab"
+          }
+        ]
+      },
+      {
+        "id":"3Dprinting",
+        "text":"Usado una impresora 3D diseñada colaborativamente",
+        "other_examples":true,
+        "examples":
+        [
+          {
+            "id":"reprap",
+            "name":"RepRap",
+            "link":"http://www.reprap.org/",
+            "image": true
+          }
+        ]
+      },
+      {
+        "id": "makerspace",
+        "text":"Conocido un \"MakerSpace\"",
+        "other_examples":true,
+        "examples":[
+          {
+            "id":"makermadrid",
+            "name" :"MakeSpace Madrid",
+            "link":"http://makespacemadrid.org/",
+            "image": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "icon": "exchange",
+    "id": "share",
+    "text": "Compartir",
+    "questions":
+    [
+      {
+        "id": "download",
+        "text": "Descargado una película de una red P2P",
+        "other_examples": true,
+        "examples":
+        [
+          {
+            "id":"emule",
+            "name":"Emule",
+            "link":"http://www.emule-project.net",
+            "image": true
+          },
+          {
+            "id": "bittorrent",
+            "name":"BitTorrent",
+            "link":"http://www.bittorrent.com/",
+            "image": true
+          }
+        ]
+      },
+      {
+        "id": "bookcross",
+        "text": "Compartido libros que acabas de leer",
+        "other_examples": true,
+        "examples":
+        [
+          {
+            "id":"bookcrosing",
+            "name": "BookCrossing",
+            "link": "http://www.bookcrossing.com/"
+          }
+        ]
+      },
+      {
+        "id": "sellGive",
+        "text": "Vendido o regalado algo que ya no usas",
+        "other_examples": true,
+        "examples":
+        [
+          {
+            "id": "nolotiro",
+            "name": "Nolotiro",
+            "link": "http://nolotiro.org/"
+          },
+          {
+            "id": "ebay",
+            "name": "Ebay",
+            "link": "http://www.ebay.com",
+            "image": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "icon":"money",
+    "id": "economy",
+    "text":"Economía",
+    "questions":
+    [
+      {
+        "id": "criptocurrency",
+        "text":"Usado BitCoin u otras criptomonedas",
+        "other_examples": true,
+        "examples": [
+          {
+            "id": "bitcoin",
+            "name": "BitCoin",
+            "link": "http://bitcoin.com/",
+            "image": true
+          }
+        ]
+      },
+      {
+        "id": "timebank",
+        "text": "Participado en un banco de tiempo",
+        "other_examples": true,
+        "examples":
+        [
+          {"id": "bdtrivas",
+           "name": "Banco de tiempo Rivas",
+           "link": "http://www.bancodeltiemporivas.org/"
+          }
+        ]
+      },
+      {
+        "id": "socialCurrency",
+        "text": "Usado alguna moneda social o alternativa",
+        "other_examples": true,
+        "examples":
+        [
+          {
+            "id": "boniato",
+            "name": "Boniato",
+            "link": "https://madrid.mercadosocial.net/moneda/do"
+          },
+          {
+            "id": "mora",
+            "name": "Mora",
+            "link": "http://intercambiosierranorte.wordpress.com/"
+          }
+        ]
+      },
+      {
+        "id": "crowdfunding",
+        "text": "Donado en una campaña de \"CrowdFunding\"",
+        "other_examples": "true",
+        "examples":
+        [
+          {
+            "id": "goteo",
+            "name": "Goteo",
+            "link": "http://goteo.org/",
+            "image": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "icon":"newspaper-o",
+    "id":"citizenMedia",
+    "text": "Información Libre y Comunitaria",
+    "questions":
+    [
+      {
+        "id":"radio",
+        "text": "Escuchado una radio libre o comunitaria",
+        "other_examples":true,
+        "examples": [
+          {
+            "id": "radioela",
+            "name": "Radio ELA",
+            "link": "https://radioela.org",
+            "image":true
+          },
+          {
+            "id": "radioalmenara",
+            "name": "Radio Almenara",
+            "link": "http://www.radioalmenara.net/"
+          }
+        ]
+      },
+      {
+        "id":"collaborativeFilteredNews",
+        "text": "Leído noticias ordenadas colaborativamente",
+        "other_examples":true,
+        "examples": [
+          {
+            "id": "meneame",
+            "name": "Menéame",
+            "link": "https://www.meneame.net/",
+            "image":true
+          }
+        ]
+      },
+      {
+        "id": "userCreatedNews",
+        "text": "Consultado un sitio de noticias creadas por los usuarios",
+        "other_examples":true,
+        "examples": [
+          {
+            "id": "wikinews",
+            "name": "WikiNews",
+            "link": "https://es.wikinews.org/"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "icon": "lemon-o",
+    "id": "agroecology",
+    "text": "Comunidades Agroecologicas",
+    "questions":
+    [
+      {
+        "id": "cooperative",
+        "text": "Comido alimentos de una cooperativa agroecológica",
+        "other_examples":true,
+        "examples":
+        [
+          {
+            "id": "bah",
+            "name": "BAH!",
+            "link": "http://bah.ourproject.org/",
+            "image": true
+
+          },
+          {
+            "id": "sas",
+            "name": "SaS: Surco a Surco",
+            "link": "http://sindominio.net/wp/surcoasurco/"
+          }
+        ]
+      },
+      {
+        "id": "urbanAgriculture",
+        "text": "Participado en el huerto urbano del barrio",
+        "other_examples": true,
+        "examples":
+        [
+          {
+            "id": "huertotabacalera",
+            "name": "Huerto de Tabacalera",
+            "link": "http://latabacalera.net/proyecto/huerto-en-tabacalera/"
+          }
+        ]
+      }
+    ]
+  }
+]
