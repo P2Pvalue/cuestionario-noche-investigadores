@@ -237,25 +237,7 @@
     "text":"Maker Spaces",
     "questions":
     [
-      {
-        "id":"bicilab",
-        "text": "Aprendido a arreglar tu bicicleta con otras personas en el \"Bicilab\" de tu bario.",
-        "other_examples": true,
-        "examples":
-        [
-          {
-            "id":"recicletos",
-            "name": "Recicletos",
-            "link":"http://blogs.latabacalera.net/recicletos/",
-            "image": true
-          },
-          {
-            "id": "bicilabenre",
-            "name":"Bicilab de la Enredadera",
-            "link":"http://laenredaderadetetuan.blogspot.com.es/search/label/Bicilab"
-          }
-        ]
-      },
+
       {
         "id":"3Dprinting",
         "text":"Have you ever used a 3-D printer designed collaboratively?",
@@ -372,25 +354,20 @@
       },
       {
         "id": "socialCurrency",
-        "text": "Usado alguna moneda social o alternativa",
+        "text": "Have you ever used any community currency?",
         "other_examples": true,
         "examples":
         [
           {
-            "id": "boniato",
-            "name": "Boniato",
-            "link": "https://madrid.mercadosocial.net/moneda/do"
-          },
-          {
-            "id": "mora",
-            "name": "Mora",
-            "link": "http://intercambiosierranorte.wordpress.com/"
+            "id": "bristolpound",
+            "name": "Bristol Pound",
+            "link": "http://bristolpound.org/"
           }
         ]
       },
       {
         "id": "crowdfunding",
-        "text": "Donado en una campaña de \"CrowdFunding\"",
+        "text": "Donate to a crowdfunding campaign?",
         "other_examples": "true",
         "examples":
         [
@@ -399,7 +376,14 @@
             "name": "Goteo",
             "link": "http://goteo.org/",
             "image": true
+          },
+          {
+            "id": "kickstarter",
+            "name": "Kickstarter",
+            "link": "https://www.kickstarter.com/",
+            "image": true
           }
+
         ]
       }
     ]
