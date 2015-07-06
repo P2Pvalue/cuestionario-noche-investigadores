@@ -254,13 +254,19 @@
       },
       {
         "id": "makerspace",
-        "text":"Conocido un \"MakerSpace\"",
+        "text":"Have you ever been in a \"MakerSpace\"",
         "other_examples":true,
         "examples":[
           {
             "id":"makermadrid",
             "name" :"MakeSpace Madrid",
             "link":"http://makespacemadrid.org/",
+            "image": true
+          },
+          {
+            "id":"makeruk",
+            "name" :"MakeSpace UK",
+            "link":"http://www.makerspace.org.uk/",
             "image": true
           }
         ]
@@ -324,12 +330,12 @@
   {
     "icon":"money",
     "id": "economy",
-    "text":"Economía",
+    "text":"Economy",
     "questions":
     [
       {
         "id": "criptocurrency",
-        "text":"Usado BitCoin u otras criptomonedas",
+        "text":"Use BitCoin or any other cryptocurrencies",
         "other_examples": true,
         "examples": [
           {
@@ -391,90 +397,31 @@
   {
     "icon":"newspaper-o",
     "id":"citizenMedia",
-    "text": "Información Libre y Comunitaria",
+    "text": "Citizen media",
     "questions":
     [
       {
-        "id":"radio",
-        "text": "Escuchado una radio libre o comunitaria",
-        "other_examples":true,
-        "examples": [
-          {
-            "id": "radioela",
-            "name": "Radio ELA",
-            "link": "https://radioela.org",
-            "image":true
-          },
-          {
-            "id": "radioalmenara",
-            "name": "Radio Almenara",
-            "link": "http://www.radioalmenara.net/"
-          }
-        ]
-      },
-      {
         "id":"collaborativeFilteredNews",
-        "text": "Leído noticias ordenadas colaborativamente",
+        "text": "Read news sorted collaboratively?",
         "other_examples":true,
         "examples": [
           {
-            "id": "meneame",
-            "name": "Menéame",
-            "link": "https://www.meneame.net/",
+            "id": "reddit",
+            "name": "Reddit",
+            "link": "https://www.reddit.com/",
             "image":true
           }
         ]
       },
       {
         "id": "userCreatedNews",
-        "text": "Consultado un sitio de noticias creadas por los usuarios",
+        "text": "Check a news site in which news are created by the users",
         "other_examples":true,
         "examples": [
           {
             "id": "wikinews",
             "name": "WikiNews",
-            "link": "https://es.wikinews.org/"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "icon": "lemon-o",
-    "id": "agroecology",
-    "text": "Comunidades Agroecologicas",
-    "questions":
-    [
-      {
-        "id": "cooperative",
-        "text": "Comido alimentos de una cooperativa agroecológica",
-        "other_examples":true,
-        "examples":
-        [
-          {
-            "id": "bah",
-            "name": "BAH!",
-            "link": "http://bah.ourproject.org/",
-            "image": true
-
-          },
-          {
-            "id": "sas",
-            "name": "SaS: Surco a Surco",
-            "link": "http://sindominio.net/wp/surcoasurco/"
-          }
-        ]
-      },
-      {
-        "id": "urbanAgriculture",
-        "text": "Participado en el huerto urbano del barrio",
-        "other_examples": true,
-        "examples":
-        [
-          {
-            "id": "huertotabacalera",
-            "name": "Huerto de Tabacalera",
-            "link": "http://latabacalera.net/proyecto/huerto-en-tabacalera/"
+            "link": "https://en.wikinews.org/"
           }
         ]
       }
