@@ -1,10 +1,8 @@
 <div class="page-header">
-  <h1>
-    Las comunidades de procomún han entrado en tu vida...
+  <h1 translate>question.title.first</h1>
+  <h1 class="text-center" translate>question.title.last</h1>
   </h1>
-  <h1 class="text-center">¡adivina cuánto!</h1>
-  </h1>
-  <h2 class="subtitle">Pincha en las comunidades que aparecen a la derecha si alguna vez has ......</h2>
+  <h2 class="subtitle" translate>question.subtitle</h2>
 </div>
 
 <div class="row category" ng-repeat="category in categories">
@@ -30,7 +28,7 @@
             </button>
             </li>
             <li ng-if="question.other_examples">
-              <input class="input-other-examples input-lg" ng-model="question.others" type="text" placeholder="otros">
+              <input class="input-other-examples input-lg" ng-model="question.others" type="text" placeholder="{{ 'question.example.other' | translate }}">
             </li>
           </ul>
         </div>
@@ -38,4 +36,4 @@
   </div>
 </div>
 
-<button class="btn btn-primary btn-lg pull-right btn-questions" ng-click="showResults()">Conocer resultados</button>
+<button class="btn btn-primary btn-lg pull-right btn-questions" ng-click="showResults()" translate>question.submit</button>

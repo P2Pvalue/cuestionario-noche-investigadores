@@ -4,6 +4,7 @@
 angular.module('nocheInv', [
   'ngRoute',
   'ui.bootstrap',
+  'pascalprecht.translate',
   'nocheInv.questions',
   'nocheInv.results',
   'nocheInv.finish',
@@ -23,6 +24,20 @@ config(['$routeProvider', function($routeProvider) {
       redirectTo: '/questions'
     });
 }]).
+config(function ($translateProvider) {
+  $translateProvider
+    .useStaticFilesLoader({
+      prefix: 'l10n/',
+      suffix: '.json'
+    })
+    .useSanitizeValueStrategy('escaped')
+    .registerAvailableLanguageKeys(['en', 'es'], {
+      'en_*': 'en',
+      'es_*': 'es'
+     })
+    .fallbackLanguage('en')
+    .determinePreferredLanguage();
+}).
 service('sharedProperties', function() {
   var results = {},
       questions = {};

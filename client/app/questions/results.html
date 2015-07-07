@@ -1,10 +1,10 @@
 <div class="page-header">
-  <h1>Las comunidades de procomún en tu vida</h1>
+  <h1 translate>result.title</h1>
 </div>
 
 <div class="alert alert-success achievements-info" role="alert">
-  <div ng-if="achievements.length">¡Enhorabuena! La producción colaborativa ya está presente en los siguientes aspectos de tu vida:</div>
-  <div ng-if="! achievements.length">¡Enhorabuena! Ya conoces lo que son las comunidades de procomún</div>
+  <div ng-if="achievements.length" translate>result.notice.any</div>
+  <div ng-if="! achievements.length" translate>result.notice.empty</div>
 </div>
 
 <div class="achievements row">
@@ -18,18 +18,17 @@
 </div>
 
 <div class="panel panel-default panel-email">
-  <div class="panel-heading">¡Conoce más!</div>
+  <div class="panel-heading" translate>result.mailing.title</div>
   <div class="panel-body">
-    Te enviamos tus resultados e información extra para que conozcas más sobre las comunidades en las que participas. No guardaremos tu correo para mandarte publicidad ni otra basura.
-
+    <div translate>result.mailing.description</div>
     <form role="form" class="form-email">
       <div class="form-group">
-        <input type="email" class="form-control input-lg" placeholder="Correo electrónico" ng-model="email">
+        <input type="email" class="form-control input-lg" placeholder="{{ 'result.mailing.placeholder' | translate }}" ng-model="email">
       </div>
       <div class="form-group">
         <div class="pull-right">
-          <button type="button" class="btn btn-danger btn-lg" ng-click="finish()">No, gracias</button>
-          <button type="button" class="btn btn-primary btn-lg" ng-click="send()">Enviar información</button>
+          <button type="button" class="btn btn-danger btn-lg" ng-click="finish()" translate>result.mailing.submit.finish</button>
+          <button type="button" class="btn btn-primary btn-lg" ng-click="send()" translate>result.mailing.submit.send</button>
         </div>
       </div>
     </form>

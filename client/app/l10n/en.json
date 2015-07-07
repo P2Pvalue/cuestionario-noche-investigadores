@@ -1,0 +1,33 @@
+{
+  "finish": {
+    "thanks": "Thank you for participating!",
+    "restart": "Start again"
+  },
+  "question": {
+    "title": {
+      "first": "The collaborative communities have entered your life...",
+      "last":  "guess to which extent!"
+    },
+    "subtitle": "Click on the communities that appear on the right if you have ever...",
+    "example": {
+      "other": "other"
+    },
+    "submit": "Know your results"
+  },
+  "result": {
+    "title": "The collaborative communities in your life",
+    "notice": {
+      "empty": "Congratulations! Now you know what collaborative communities are",
+      "any": "Congratulations! Collaborative production is already present in the following aspects of your life:"
+    },
+    "mailing": {
+      "title": "Know more!",
+      "description": "We will send you your results and extra information about the communities you are already participating in. We will not keep your email to send you advertisement neither any other kind of junk.",
+      "placeholder": "Email",
+      "submit": {
+        "finish": "No, thanks",
+	"send": "Send information"
+      }
+    }
+  }
+}

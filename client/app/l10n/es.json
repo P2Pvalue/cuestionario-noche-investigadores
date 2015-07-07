@@ -1,0 +1,33 @@
+{
+  "finish": {
+    "thanks": "¡Gracias por participar!",
+    "restart": "Empezar de nuevo"
+  },
+  "question": {
+    "title": {
+      "first": "Las comunidades de procomún han entrado en tu vida...",
+      "last":  "¡adivina cuánto!"
+    },
+    "subtitle": "Pincha en las comunidades que aparecen a la derecha si alguna vez has ......",
+    "example": {
+      "other": "otros"
+    },
+    "submit": "Conocer resultados"
+  },
+  "result": {
+    "title": "Las comunidades de procomún en tu vida",
+    "notice": {
+      "empty": "¡Enhorabuena! Ya conoces lo que son las comunidades de procomún",
+      "any": "¡Enhorabuena! La producción colaborativa ya está presente en los siguientes aspectos de tu vida:"
+    },
+    "mailing": {
+      "title": "¡Conoce más!",
+      "description": "Te enviamos tus resultados e información extra para que conozcas más sobre las comunidades en las que participas. No guardaremos tu correo para mandarte publicidad ni otra basura.",
+      "placeholder": "Correo electrónico",
+      "submit": {
+        "finish": "No, gracias",
+	"send": "Enviar información"
+      }
+    }
+  }
+}
