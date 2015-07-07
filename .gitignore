@@ -3,3 +3,7 @@ tmp/
 log/
 **swp
 email.js
+passenger.3000.log
+passenger.3000.pid
+passenger.3000.pid.lock
+
