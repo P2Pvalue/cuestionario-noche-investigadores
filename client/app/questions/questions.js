@@ -10,7 +10,7 @@ angular.module('nocheInv.questions', ['ngRoute'])
 }])
 
 .controller('questionsCtrl', ['$scope', '$http', '$location', 'sharedProperties', '$translate', function($scope, $http, $location, sharedProperties, $translate) {
-  $http.get('questions/questions.' + $translate.use() + '.json').success(function(data) {
+  $http.get('questions/questions.' + $translate.use() + '.json' + '?nocache=' + (new Date()).getTime()).success(function(data) {
     sharedProperties.setQuestions(data);
     $scope.categories = data;
   });
