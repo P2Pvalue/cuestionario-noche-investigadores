@@ -117,7 +117,7 @@
     "questions": [
       {
         "id": "browser",
-        "text": "Using a free softwrae browser?",
+        "text": "Used a free software browser?",
         "other_examples": true,
         "examples": [
           {
@@ -217,7 +217,7 @@
       },
       {
         "id":"crowdsourcingMap",
-        "text": "Search or seen a map of natural disasters created on live?",
+        "text": "Seen a map of natural disasters created in real time?",
         "other_examples": true,
         "examples":
         [
@@ -240,7 +240,7 @@
 
       {
         "id":"3Dprinting",
-        "text":"Have you ever used a 3-D printer designed collaboratively?",
+        "text":"Used a 3-D printer designed collaboratively?",
         "other_examples":true,
         "examples":
         [
@@ -254,7 +254,7 @@
       },
       {
         "id": "makerspace",
-        "text":"Have you ever been in a \"MakerSpace\"",
+        "text":"Been in a \"MakerSpace\"",
         "other_examples":true,
         "examples":[
           {
@@ -275,12 +275,12 @@
   {
     "icon": "exchange",
     "id": "share",
-    "text": "Compartir",
+    "text": "Sharing",
     "questions":
     [
       {
         "id": "download",
-        "text": "Have you ever download a movie using a P2P application?",
+        "text": "Downloaded a movie using a P2P application?",
         "other_examples": true,
         "examples":
         [
@@ -300,7 +300,7 @@
       },
       {
         "id": "bookcross",
-        "text": "Share a book you have just read",
+        "text": "Shared a book you have just read",
         "other_examples": true,
         "examples":
         [
@@ -313,7 +313,7 @@
       },
       {
         "id": "sellGive",
-        "text": "Sell or give something you do not use anymore?",
+        "text": "Given something you do not use anymore?",
         "other_examples": true,
         "examples":
         [
@@ -334,7 +334,7 @@
     [
       {
         "id": "criptocurrency",
-        "text":"Use BitCoin or any other cryptocurrencies",
+        "text":"Used BitCoin or any other cryptocurrencies",
         "other_examples": true,
         "examples": [
           {
@@ -347,7 +347,7 @@
       },
       {
         "id": "timebank",
-        "text": "Have you ever participated in a Time Bank?",
+        "text": "Participated in a Time Bank?",
         "other_examples": true,
         "examples":
         [
@@ -359,7 +359,7 @@
       },
       {
         "id": "socialCurrency",
-        "text": "Have you ever used any community currency?",
+        "text": "Used any community currency?",
         "other_examples": true,
         "examples":
         [
@@ -372,7 +372,7 @@
       },
       {
         "id": "crowdfunding",
-        "text": "Donate to a crowdfunding campaign?",
+        "text": "Donated to a crowdfunding campaign?",
         "other_examples": "true",
         "examples":
         [
@@ -400,7 +400,7 @@
     [
       {
         "id":"collaborativeFilteredNews",
-        "text": "Read news sorted collaboratively?",
+        "text": "Read news collaboratively sorted?",
         "other_examples":true,
         "examples": [
           {
@@ -412,7 +412,7 @@
       },
       {
         "id": "userCreatedNews",
-        "text": "Check a news site in which news are created by the users",
+        "text": "Checked a news site created by the users",
         "other_examples":true,
         "examples": [
           {
