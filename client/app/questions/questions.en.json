@@ -266,8 +266,7 @@
           {
             "id":"makeruk",
             "name" :"MakeSpace UK",
-            "link":"http://www.makerspace.org.uk/",
-            "image": true
+            "link":"http://www.makerspace.org.uk/"
           }
         ]
       }
