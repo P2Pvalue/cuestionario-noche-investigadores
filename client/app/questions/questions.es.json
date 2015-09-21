@@ -348,7 +348,7 @@
     [
       {
         "id": "criptocurrency",
-        "text":"Usado BitCoin u otras criptomonedas",
+        "text":"Usado BitCoin, FairCoin u otras criptomonedas",
         "other_examples": true,
         "examples": [
           {
@@ -356,7 +356,14 @@
             "name": "BitCoin",
             "link": "http://bitcoin.com/",
             "image": true
+          },
+          {
+            "id": "faircoin",
+            "name": "FairCoin",
+            "link": "http://fair.coop/faircoin",
+            "image": true
           }
+
         ]
       },
       {
