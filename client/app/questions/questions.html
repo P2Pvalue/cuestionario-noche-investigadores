@@ -20,7 +20,7 @@
             <li ng-repeat="example in question.examples">
               <button type="button" class="btn btn-default btn-example btn-text" ng-click="selectExample(example)" ng-class="{active : isSelected(example)}">
               <div ng-if="example.image">
-                <img ng-src="images/logos/{{example.id}}.png" title="{{example.name}}" id="img-{{example-name}}">
+                <img ng-src="images/logos/{{example.id}}.png" title="{{example.name}}" id="img-{{example-name}}" alt="{{example.name}}">
               </div>
               <div ng-if="!example.image" >
                 {{example.name}}
