@@ -38,7 +38,7 @@ config(function ($translateProvider) {
     .fallbackLanguage('en')
     .determinePreferredLanguage();
 }).
-service('sharedProperties', function() {
+service('sharedProperties', ['$translate', function($translate) {
   var results = {},
       questions = {};
 
@@ -65,4 +65,4 @@ service('sharedProperties', function() {
       return results;
     }
   };
-});
+}]);
