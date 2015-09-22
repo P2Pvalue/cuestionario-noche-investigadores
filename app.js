@@ -54,7 +54,7 @@ var composeAndSendEmail = function(json) {
   var text = "";
   var notKnownCategories = [];
   var jsonQuestions = {};
-  fs.readFile(__dirname + '/client/app/questions/questions.json', function(err, data) {
+  fs.readFile(__dirname + '/client/app/questions/questions.' + json.lang + '.json', function(err, data) {
     if (err) {
       console.log(err);
     } else {

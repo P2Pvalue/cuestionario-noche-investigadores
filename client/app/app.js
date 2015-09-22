@@ -43,6 +43,10 @@ service('sharedProperties', function() {
       questions = {};
 
   return {
+    getLang: function() {
+      return $translate.proposedLanguage() || $translate.use();
+    },
+
     getQuestions: function() {
       return questions;
     },

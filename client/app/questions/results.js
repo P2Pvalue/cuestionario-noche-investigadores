@@ -26,6 +26,7 @@ angular.module('nocheInv.results', ['ngRoute'])
   $scope.send = function() {
     var data = sharedProperties.getResults();
     data.email = $scope.email;
+    data.lang  = sharedProperties.getLang();
 
     $http.post('/finish', data)
     .success(function() {
